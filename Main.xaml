@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1268,2047.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,2609.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="56">
       <x:String>System.Activities</x:String>
@@ -61,7 +61,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1036,1842.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1036,2444.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="enableDarkMode" />
     </Sequence.Variables>
@@ -78,9 +78,9 @@
         <InArgument x:TypeArguments="x:Boolean">True</InArgument>
       </Assign.Value>
     </Assign>
-    <If Condition="[enableDarkMode]" sap:VirtualizedContainerService.HintSize="994.4,1649.6" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[enableDarkMode]" sap:VirtualizedContainerService.HintSize="994.4,2252" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Sequence DisplayName="Dark Mode" sap:VirtualizedContainerService.HintSize="475.2,1500" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Dark Mode" sap:VirtualizedContainerService.HintSize="475.2,2092.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -130,6 +130,36 @@
             </uix:NApplicationCard.Body>
             <uix:NApplicationCard.TargetApp>
               <uix:TargetApp FilePath="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" InformativeScreenshot="6246bb62993997a4a6c9dd630058a0c6.png" Selector="&lt;wnd app='applicationframehost.exe' appid='windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel' title='Settings'/&gt;" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: DarkModeSwitcher - UiPath Studio Pro" sap:VirtualizedContainerService.HintSize="433.6,552.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" Version="V1">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,261.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click '_H'" sap:VirtualizedContainerService.HintSize="333.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="9, 9, 92, 37" ElementType="Text" FriendlyName="'_H'" FullSelectorArgument="&lt;ctrl automationid='Ribbon' /&gt;&lt;ctrl automationid='PART_ApplicationButton' /&gt;&lt;ctrl name='_H' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='Ribbon' /&gt;&lt;ctrl automationid='PART_ApplicationButton' /&gt;&lt;ctrl name='_H' role='text' automationid='' check:text='_H' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAApCAYAAADKzyycAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHXSURBVGhD7ZttasJAEIZ7F5EWigg9hQheQFqpFQ9hyAVa+iN4CM0l0qtN9zPJTnYTWtuM4LvwELM7m8R5dif+8Q4NDU03QhNpLv1WwPvHJ73t9mAEXjavtF4/hwL0wGz+BEbg/uGRJpMpBEgBAcJAgDAQIAwECAMBwkCAMBAgDAQIAwHCjCpgkZVUVUfaRsZm8z0V1RedslVyrAoo6bDkcf4earzo/w4+Lrjf7ti6fpvUM1/O1QuIJkrjkpWK70/aig5nm9yugP9LdozrFrDM6aT6il07roWT0B439ziXZl5HmsfMUzFKAgTUdAVsC7VKzzktgrgQHmMF5LR1x+5cu/pP2d4dIcDBBcRLEodf0wtYpHaP6dfvDy/i5gTY2puiTshQ+fG4cuJfyLUA9dnsDvYybvpSAsLnMQy80C/henfAHwhoVruLDc5vdgeMVILMeZjkvjEDBLQTYhM0tP15mQmTrKiTaq/f7CgIYERWvElITxmKjHcEuEQXBU8uBDDiJcfO+WF/ICAVCwGMvppvx3QSG+LXiQmw83l8SgC/j2Xwx8AvGVUA6AIBwkCAMBAgDAQIAwHCQIAwECAMBAgDAcJAgDAQIExUgP7Pku4E4+HSDwEyTOkbR6rQeiPJCGoAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;wnd app='uipath.studio.exe' cls='HwndWrapper*' title='KennametalPO - UiPath Studio Pro' /&gt;" SearchSteps="Selector, FuzzySelector, Image" SelectionStrategy="AA" Text="_H" TextMethod="AttributeText" TextSelector="&lt;ctrl role='text' /&gt;">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="7, 7, 96, 41" ElementType="Button" FriendlyName="'ApplicationButton'" FullSelectorArgument="&lt;ctrl automationid='Ribbon' /&gt;&lt;ctrl automationid='PART_ApplicationButton' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='Ribbon' /&gt;&lt;ctrl automationid='PART_ApplicationButton' role='push button' check:text='ApplicationButton' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAApCAYAAADKzyycAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHXSURBVGhD7ZttasJAEIZ7F5EWigg9hQheQFqpFQ9hyAVa+iN4CM0l0qtN9zPJTnYTWtuM4LvwELM7m8R5dif+8Q4NDU03QhNpLv1WwPvHJ73t9mAEXjavtF4/hwL0wGz+BEbg/uGRJpMpBEgBAcJAgDAQIAwECAMBwkCAMBAgDAQIAwHCjCpgkZVUVUfaRsZm8z0V1RedslVyrAoo6bDkcf4earzo/w4+Lrjf7ti6fpvUM1/O1QuIJkrjkpWK70/aig5nm9yugP9LdozrFrDM6aT6il07roWT0B439ziXZl5HmsfMUzFKAgTUdAVsC7VKzzktgrgQHmMF5LR1x+5cu/pP2d4dIcDBBcRLEodf0wtYpHaP6dfvDy/i5gTY2puiTshQ+fG4cuJfyLUA9dnsDvYybvpSAsLnMQy80C/henfAHwhoVruLDc5vdgeMVILMeZjkvjEDBLQTYhM0tP15mQmTrKiTaq/f7CgIYERWvElITxmKjHcEuEQXBU8uBDDiJcfO+WF/ICAVCwGMvppvx3QSG+LXiQmw83l8SgC/j2Xwx8AvGVUA6AIBwkCAMBAgDAQIAwHCQIAwECAMBAgDAcJAgDAQIExUgP7Pku4E4+HSDwEyTOkbR6rQeiPJCGoAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" Text="ApplicationButton" TextMethod="AttributeText" TextSelector="&lt;ctrl role='push button' /&gt;" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp FilePath="C:\Program Files (x86)\UiPath\Studio\uipath.studio.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOeSURBVFhH7ZfZS1RxFMfVrAwRlZKCiFQiyodAWwjqoYd66SWK/gDLFo0WW7FMoqwoihaK7E2CooWK6qFIIysoW8AgW5RqRmfGGcdcxnGcxVm+nTPeaa4zJy2YC/fBH3y4w/eee+53zu/3u/fcpKQtRugaUdQToqgnRFFPiKKeEEU9IYpasokoUY7S+VhEUQs2G5G61YgFRy1Ydd6G3ApzWBNj1YiiBkwua0PFvV4YfvnRNRBAk8mL5aetY5sUxQibDEgqVrGBGCshx6iv4XhicXUHmjuGEBmhEHD1lRMZ29vkPBFEkaE1UnDEgsqHfah+PEzxtW5k72yX4xmawvI7PRTrCMdXPepD9m6Kp1yrL3TC1OtX7A2Pu02DmF5O50f706LI0EJeX9OFHldQSQfUf/Mg78Bf1g5pKaVG/OiKVsntCyG/kuLJ4NxDZtR/dSOgpPMMhVD5oA9TaOrjcqkRRYYMrrtiH2Gw7qsHuftHN9jSGTXY7w4ij4yxQd4gS05acfKJA7WNA9hNlZ6xzxSfJxZRZBJskGNS6JhOcVlkNo3Xt5QnFlFkEmxwApmac9iMohNWFFElC493IGePjiqYtasNj5vdCFI63sEubwil17vj88QiiowGBp98dofN8RikDVQ2blDNuMFYxg0mwOCay3Z0qww+a/Egf5RXXSq9tr7bo+9bBxmcfVBDgyvP2cKtUWS8NXgxv9IiGyQTmfTitzuj8bb+AHL20sOY4hNvkG7IzaXVEb2huTeAZaeoh5PiNxqw9LQNQcUAj49mH9K2UTOgiUFKmkGtVSNVLZKUb36mzoGpO5QWSUUW9XX3m1zDgcq48tKJVJoJzpd4g0yJAeW3e+BXlcXpCeIq3XjNxU4UUYUXHesIb6ZbH1wUpwTR4M214qwNyTQTnEsbg1SZabSuntPmUA82bOkLUIfsw2fqknmtqaeWf19qcCJT1S1rY5ChCsyrMqNV9fgYa7xo9aCgyoJkVR7tDBLJ1LstpG+KTxbfcPZRxjtas4U09cm8NlU52ODTLyMNbruRIINhqJIz95uwhzphbpu+WIdg6PZTi++nLzQfbr53obj2FzJ5AynrTk3Gjjacq+/H6x9evPnpRQMtm7U19ri4OETxb3BVqJqT6IGcQx9DsytMmHXAhOxd7Ujh87SpwjGx1ynwIyd9e/sfJo71PcKI4r/ARtRIMRL/e40o6glR1BOiqCdEUU+Iop4QRT0hirrBiN+xae39ir8CWAAAAABJRU5ErkJggg==" InformativeScreenshot="53c41cafb2afda36e71fbf3f87a6ebb6.png" Selector="&lt;wnd app='uipath.studio.exe' cls='HwndWrapper*' title='DarkModeSwitcher - UiPath Studio Pro'/&gt;" />
             </uix:NApplicationCard.TargetApp>
           </uix:NApplicationCard>
         </Sequence>
